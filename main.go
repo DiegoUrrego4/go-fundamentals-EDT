@@ -1,9 +1,9 @@
 package main
 
 import (
-	"conceptos/estructuras"
+	"conceptos/estructuras-control"
 )
 
 func main() {
-	estructuras.Structures()
+	estructuras_control.ForLoop()
 }
