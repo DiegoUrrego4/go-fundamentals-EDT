@@ -1,9 +1,47 @@
 package main
 
-import (
-	"conceptos/estructuras-control"
-)
+import "fmt"
 
 func main() {
-	estructuras_control.ForLoop()
+	//funciones.Greet("Jennyfer", "Salcedo")
+	//name := "diego"
+	//funciones.ToUpperCase(&name)
+	//fmt.Println(name)
+	//
+	//result := funciones.Suma(2, 3)
+	//fmt.Println(result)
+	//
+	//lower, upper := funciones.Convert("PrUeBA")
+	//fmt.Println("Lower:", lower, "Upper:", upper)
+
+	//nums := []int{2, 12, 23, 98, 21, 79}
+	//result := funciones.Filter(nums, lessThanTwenty)
+	//fmt.Println(result)
+
+	//result := funciones.Sum(2)(3)
+	//fmt.Println(result)
+	//plus10 := funciones.Sum(10)
+	//fmt.Println(plus10(2))
+	//fmt.Println(plus10(4))
+	//fmt.Println(plus10(1))
+	//fmt.Println(plus10(5))
+
+	//fmt.Println(funciones.SumWithManyParameters(2))
+	//fmt.Println(funciones.SumWithManyParameters(2, 3))
+	//fmt.Println(funciones.SumWithManyParameters(2, 3, 12))
+	//fmt.Println(funciones.SumWithManyParameters(2, 3, 12, 1, 24))
+
+	// funciones anónimas
+	func(name string) {
+		fmt.Println("✋ Hello", name)
+	}("gophers")
+
 }
+
+//func greaterToTen(num int) bool {
+//	return num > 10
+//}
+//
+//func lessThanTwenty(num int) bool {
+//	return num < 20
+//}
