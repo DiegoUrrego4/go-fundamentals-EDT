@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"conceptos/manejo-errores"
+	"errors"
+	"fmt"
+)
 
 func main() {
 	//funciones.Greet("Jennyfer", "Salcedo")
@@ -32,10 +36,22 @@ func main() {
 	//fmt.Println(funciones.SumWithManyParameters(2, 3, 12, 1, 24))
 
 	// funciones anónimas
-	func(name string) {
-		fmt.Println("✋ Hello", name)
-	}("gophers")
+	//func(name string) {
+	//	fmt.Println("✋ Hello", name)
+	//}("gophers")
 
+	//manejo_errores.ErrorsFundamentals()
+	found, err := manejo_errores.Search("34")
+
+	if errors.Is(err, manejo_errores.ErrNotFound) {
+		fmt.Println("Pudimos controlar el error!")
+		return
+	}
+
+	if err != nil {
+		fmt.Println("Search()", err)
+	}
+	fmt.Println(found)
 }
 
 //func greaterToTen(num int) bool {
