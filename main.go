@@ -49,7 +49,11 @@ func main() {
 	//}
 	//fmt.Println(found)
 
-	manejo_errores.DeferBasic()
+	//manejo_errores.DeferBasic()
+	manejo_errores.Division(100, 10)
+	manejo_errores.Division(200, 25)
+	manejo_errores.Division(34, 0)
+	manejo_errores.Division(124, 8)
 
 }
 
