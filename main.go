@@ -1,10 +1,6 @@
 package main
 
-import (
-	"conceptos/manejo-errores"
-	"errors"
-	"fmt"
-)
+import "conceptos/manejo-errores"
 
 func main() {
 	//funciones.Greet("Jennyfer", "Salcedo")
@@ -41,17 +37,20 @@ func main() {
 	//}("gophers")
 
 	//manejo_errores.ErrorsFundamentals()
-	found, err := manejo_errores.Search("34")
+	//found, err := manejo_errores.Search("34")
+	//
+	//if errors.Is(err, manejo_errores.ErrNotFound) {
+	//	fmt.Println("Pudimos controlar el error!")
+	//	return
+	//}
+	//
+	//if err != nil {
+	//	fmt.Println("Search()", err)
+	//}
+	//fmt.Println(found)
 
-	if errors.Is(err, manejo_errores.ErrNotFound) {
-		fmt.Println("Pudimos controlar el error!")
-		return
-	}
+	manejo_errores.DeferBasic()
 
-	if err != nil {
-		fmt.Println("Search()", err)
-	}
-	fmt.Println(found)
 }
 
 //func greaterToTen(num int) bool {
