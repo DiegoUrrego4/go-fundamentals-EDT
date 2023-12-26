@@ -1,7 +1,5 @@
 package main
 
-import "conceptos/manejo-errores"
-
 func main() {
 	//funciones.Greet("Jennyfer", "Salcedo")
 	//name := "diego"
@@ -50,10 +48,12 @@ func main() {
 	//fmt.Println(found)
 
 	//manejo_errores.DeferBasic()
-	manejo_errores.Division(100, 10)
-	manejo_errores.Division(200, 25)
-	manejo_errores.Division(34, 0)
-	manejo_errores.Division(124, 8)
+	//manejo_errores.Division(100, 10)
+	//manejo_errores.Division(200, 25)
+	//manejo_errores.Division(34, 0)
+	//manejo_errores.Division(124, 8)
+
+	//fn_no_genericas_any.NoGenerics()
 
 }
 
