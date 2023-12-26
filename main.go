@@ -1,5 +1,7 @@
 package main
 
+import "conceptos/tipos_genericos"
+
 func main() {
 	//funciones.Greet("Jennyfer", "Salcedo")
 	//name := "diego"
@@ -54,6 +56,7 @@ func main() {
 	//manejo_errores.Division(124, 8)
 
 	//fn_no_genericas_any.NoGenerics()
+	tipos_genericos.GenericTypesFundamentals()
 
 }
 
